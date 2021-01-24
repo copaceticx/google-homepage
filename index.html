@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 
 <!--To do:
-    Transfer basic html from practice
-    Transfer basic css from practice
-    Set up horizontal nav bar
-    Add logo & searchbar
-    Add links
-    Style links
+    Resize searchbar
+    Resize search buttons
+    Put search buttons beside eachother
+    Create submit form
 -->
 
 <style>
@@ -35,6 +33,10 @@
         border-radius: 5px;
         margin: 5px;
         background-color: #f8f9fa;
+        font-size: 14px;
+    }
+    .searchbuttons:hover {
+        border: 1px solid #dadce0;
     }
     #searchbar {
         border: 1px solid gray;
@@ -62,7 +64,6 @@
     <div id="main">
         <div><img alt="Google logo" src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
         <div id="searchbar">Searchbar here</div>
-        <div class="searchbuttons">Search button here</div>
-        <div class="searchbuttons">Lucky button here</div>
+        <div><button class="searchbuttons">Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
     </div>
 </html>
