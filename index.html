@@ -48,7 +48,7 @@
     }
     #searchbar {
         border: 1px solid gray;
-        border-radius: 10px;
+        border-radius: 25px;
         padding: 7px 0 7px 0;
         margin: 0 30% 0 30%;
     }
@@ -68,6 +68,11 @@
         background-color: transparent;
         width: 350px;
     }
+    .icon {
+        height: 20px;
+        width: 20px;
+        padding-right: 30px;
+    }
 </style>
 
 <html>
@@ -85,7 +90,7 @@
     </nav>
     <div id="main">
         <div><img alt="Google logo" src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
-        <div id="searchbar"><input class="searchtext" type="text" maxlength="2048"></div>
+        <div id="searchbar"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"><input class="searchtext" type="text" maxlength="2048"></div>
         <div><button class="searchbuttons">Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
     </div>
 </html>
