@@ -25,6 +25,10 @@
     a:hover {
         text-decoration: underline;
     }
+    input[type=text] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
     #main {
         text-align: center;
     }
@@ -53,6 +57,9 @@
         background-color: #4285f4;
         text-decoration: none;
     }
+    .searchtext {
+        border: none;
+    }
 </style>
 
 <html>
@@ -70,7 +77,7 @@
     </nav>
     <div id="main">
         <div><img alt="Google logo" src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
-        <div id="searchbar">Searchbar here</div>
+        <div id="searchbar"><input class="searchtext" type="text" maxlength="2048"></div>
         <div><button class="searchbuttons">Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
     </div>
 </html>
