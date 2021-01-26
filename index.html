@@ -13,17 +13,21 @@
         font-size: 12px;
         color: black;
     }
-    /*.main {}*/
     ul {
+        list-style-type: none;
         margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
     li {
-        display: inline;
+        /*display: inline;*/
+        float: left;
         padding: 10px;
     }
-    a {
-        color: black;
+    li a {
+        display: block;
         text-decoration: none;
+        color: black;
     }
     a:hover {
         text-decoration: underline;
@@ -74,12 +78,14 @@
         padding: 5px 20px 5px 20px;
         opacity: 60%;
     }
-    /*#flexcontainer {
+    #flexcontainer {
         display: flex;
         flex-direction: row;
         width: 100%;
         position: fixed;
         bottom: 0;
+        right: 0;
+        left: 0;
         border-top: 1px solid  #dadce0;
         padding: 10px 7px 10px 7px;
         background-color: #f8f9fa;
@@ -87,7 +93,7 @@
     }
     #two {
         margin-left: auto;
-    }*/
+    }
     #main {
         margin-top: 5%;
     }
@@ -95,13 +101,24 @@
         margin: auto;
         width: 25%;
     }
+    #bottom {
+        margin-bottom: 10%;
+    }
+    #footer {
+        border-top: 1px solid purple;
+        background-color: yellow;
+    }
+    .newright {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
 </style>
 
 <html>
     <head>
         <title>Google</title>
     </head>
-    <div>
+    <body>
     <div>
         <ul>
             <li><a href="#" style="opacity:0.75">About</a></li>
@@ -114,15 +131,17 @@
     <div id="main">
         <div class="center"><img alt="Google logo" src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
         <div id="searchbar"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"><input id="searchtext" type="text" maxlength="2048"></div>
-        <div class="center"><button class="searchbuttons">Google Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
+        <div class="center" id="bottom"><button class="searchbuttons">Google Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
     </div>
-    <div>
+    <div id="footer">
         <ul>
             <li><a href="#">Advertising</a></li>
             <li><a href="#">Business</a></li>
             <li><a href="#">How Search works</a></li>
+            <li class="right"><a href="#">Settings</a></li>
+            <li class="right"><a href="#">Terms</a></li>
+            <li class="right"><a href="#">Privacy</a></li>
         </ul>
-        <span class="right"><a href="#">Settings</a><a href="#">Terms</a><a href="#">Privacy</a></span>
     </div>
 
 
@@ -130,7 +149,7 @@
 
     <!--<div id="flexcontainer">
         <div id="one"><a href="#">Advertising</a> <a href="#">Business</a> <a href="#">How Search works</a></div>
-        <div id="two"><a href="#">Settings</a> <a href="#">Terms</a> <a href="#">Privacy</a></div>
+        <div id="two"><a href="#">Settings</a> <a href="#">Terms</a> <a href="#">Privacy</a></div></div>
         <ul>
             <li><a href="#">Advertising</a></li>
             <li><a href="#">Business</a></li>
@@ -140,5 +159,5 @@
             <li class="right"><a href="#">Privacy</a></li>
         </ul>
     </div>-->
-    </div>
+</body>
 </html>
