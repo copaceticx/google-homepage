@@ -3,9 +3,8 @@
 <!--To do:
     Create submit/input form(?)
     Change margins to space content
-    Add footer -- figure out what specifically to use
-    Add hover border shadow to search bar
     Clean up style section of html
+    **Change footer area so it doesn't cut off
 -->
 
 <style>
@@ -14,9 +13,14 @@
         font-size: 12px;
         color: black;
     }
+    .main {
+        text-align: center;
+    }
+    ul {
+        margin: 0;
+    }
     li {
         display: inline;
-        float: left;
         padding: 10px;
     }
     a {
@@ -29,9 +33,6 @@
     input[type=text] {
         -webkit-appearance: none;
         -moz-appearance: none;
-    }
-    #main {
-        text-align: center;
     }
     .searchbuttons {
         border: 1.5px solid #f8f9fa;
@@ -51,9 +52,14 @@
         margin: 0 30% 0 30%;
     }
     #searchbar:hover {
-        box-shadow: 0 0 0 1px #e7e8eb;
+        box-shadow: 0 0 0 2px #e7e8eb;
     }
-    .navright {
+    #searchtext {
+        border: none;
+        background-color: transparent;
+        width: 350px;
+    }
+    .right {
         float: right;
     }
     #signin {
@@ -64,16 +70,25 @@
         background-color: #4285f4;
         border: 1px solid #4285f4;
     }
-    .searchtext {
-        border: none;
-        background-color: transparent;
-        width: 350px;
-    }
     .icon {
         height: 18px;
         width: 18px;
-        padding-right: 30px;
+        padding: 5px 20px 5px 20px;
         opacity: 60%;
+    }
+    #flexcontainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        border-top: 1px solid  #dadce0;
+        padding: 10px 7px 10px 7px;
+        background-color: #f8f9fa;
+        font-size: 13px;
+    }
+    #two {
+        margin-left: auto;
     }
 </style>
 
@@ -81,18 +96,44 @@
     <head>
         <title>Google</title>
     </head>
-    <nav>
+    <div>
+    <div>
         <ul>
             <li><a href="#" style="opacity:0.75">About</a></li>
             <li><a href="#" style="opacity:0.75">Store</a></li>
-            <li class="navright" id="sibutton"><a href="#" id="signin"><strong>Sign In</strong></a></li>
-            <li class="navright"><a href="#">Images</a></li>
-            <li class="navright"><a href="#">Gmail</a></li>
+            <li class="right" id="sibutton"><a href="#" id="signin"><strong>Sign In</strong></a></li>
+            <li class="right"><a href="#">Images</a></li>
+            <li class="right"><a href="#">Gmail</a></li>
         </ul>
-    </nav>
+    </div>
     <div id="main">
         <div><img alt="Google logo" src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
-        <div id="searchbar"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"><input class="searchtext" type="text" maxlength="2048"></div>
-        <div><button class="searchbuttons">Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
+        <div id="searchbar"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"><input id="searchtext" type="text" maxlength="2048"></div>
+        <div><button class="searchbuttons">Google Search</button><button class="searchbuttons">I'm Feeling Lucky</button></div>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+        </ul>
+        <span class="right"><a href="#">Settings</a><a href="#">Terms</a><a href="#">Privacy</a></span>
+    </div>
+
+
+
+
+    <!--<div id="flexcontainer">
+        <div id="one"><a href="#">Advertising</a> <a href="#">Business</a> <a href="#">How Search works</a></div>
+        <div id="two"><a href="#">Settings</a> <a href="#">Terms</a> <a href="#">Privacy</a></div>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+            <li class="right"><a href="#">Settings</a></li>
+            <li class="right"><a href="#">Terms</a></li>
+            <li class="right"><a href="#">Privacy</a></li>
+        </ul>
+    </div>-->
     </div>
 </html>
