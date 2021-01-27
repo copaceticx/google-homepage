@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 
-<!--To do:
-    Create form & restyle
-    Clean up style section of html
--->
-
 <style>
     body {
         font-family: arial, sans-serif;
@@ -18,7 +13,6 @@
         overflow: hidden;
     }
     li {
-        /*display: inline;*/
         float: left;
         padding: 10px;
     }
@@ -30,20 +24,24 @@
     a:hover {
         text-decoration: underline;
     }
+    #signin {
+        color: white;
+        text-decoration: none;
+    }
+    #sibutton {
+        background-color: #4285f4;
+        border: 1px solid #4285f4;
+    }
+    #main {
+        margin-top: 5%;
+    }
+    .center {
+        margin: auto;
+        width: 25%;
+    }
     input[type=text] {
         -webkit-appearance: none;
         -moz-appearance: none;
-    }
-    .searchbuttons {
-        border: 1.5px solid #f8f9fa;
-        border-radius: 5px;
-        margin: 5px;
-        background-color: #f8f9fa;
-        font-size: 14px;
-        padding: 7px;
-    }
-    .searchbuttons:hover {
-        border: 1px solid #dadce0;
     }
     #searchbar {
         border: 1px solid #dadce0;
@@ -59,29 +57,25 @@
         background-color: transparent;
         width: 300px;
     }
-    .right {
-        float: right;
-    }
-    #signin {
-        color: white;
-        text-decoration: none;
-    }
-    #sibutton {
-        background-color: #4285f4;
-        border: 1px solid #4285f4;
-    }
     .icon {
         height: 18px;
         width: 18px;
         padding: 0px 20px 0px 20px;
         opacity: 60%;
     }
-    #main {
-        margin-top: 5%;
+    .searchbuttons {
+        border: 1.5px solid #f8f9fa;
+        border-radius: 5px;
+        margin: 5px;
+        background-color: #f8f9fa;
+        font-size: 14px;
+        padding: 7px;
     }
-    .center {
-        margin: auto;
-        width: 25%;
+    .searchbuttons:hover {
+        border: 1px solid #dadce0;
+    }
+    .right {
+        float: right;
     }
     #footer {
         margin-top: 15%;
