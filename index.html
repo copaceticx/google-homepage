@@ -61,6 +61,7 @@
         border: none;
         background-color: transparent;
         width: 350px;
+        margin-left: 50px;
     }
     .right {
         float: right;
@@ -109,8 +110,10 @@
     </div>
     <div id="main">
         <div class="center"><img alt="Google logo" src="https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
-        <div id="searchbar"><form action="#"><input id="searchtext" type="text" maxlength="2048"></form></div>
-        <div class="center" id="bottom"><button type="submit" class="searchbuttons">Google Search</button><button type="submit" class="searchbuttons">I'm Feeling Lucky</button></div>
+        <form action="#">
+            <div id="searchbar"><input id="searchtext" type="text" maxlength="2048"></div>
+            <div class="center" id="bottom"><button type="submit" class="searchbuttons">Google Search</button><button type="submit" class="searchbuttons">I'm Feeling Lucky</button></div>
+        </form>
     </div>
     <div id="footer">
         <ul>
